@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> SPA Website </title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- my google font external links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- cdm for social media buttons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+h1
+{ font-size: 270%;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+}
+
+p
+{ font-size: 220%;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+}
+
+.bgFloralWhite {
+     background:FloralWhite;
+ }
+
+ .navbar a {
+  color: #000000;
+ }
+
+ .footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(78, 122, 135);
+  color: snow;
+  text-align: center;
+}
+
+
+.fa {
+  padding: 14px;
+  font-size: 22px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+  border-radius: 50%;
+
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: azure;
+    color: indigo;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+}
+
+/* style for contact form */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+</style>
+
+
+</head>
+
+<!-- STARTING CONTENT -->
+
+
+<body>
+
+  <!-- NAV BAR code starts here -->
+
+
+  <nav class="navbar navbar-expand-sm bgFloralWhite navbarBlack sticky-top">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Assignment 3 SPA homepage.html">
+    <img src="Code images/47.png" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="Services.html" style="font-size: 100%; padding-right: 20px">SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="" style="font-size: 100%; padding-right: 20px;">GIFT CARDS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About Spa.html" style="font-size: 100%; padding-right: 20px;">ABOUT US</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact SPA.html" style="font-size: 100%; padding-right: 80px;" >CONTACT</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- NAV BAR code ends here -->
+<br>
+<br>
+
+<section>
+<div class="container">
+  
+<!-- my row -->
+<!-- 2 columns -->
+
+<div class="row">
+<!-- 1st col -->
+  <div class="col">
+<img src="Code images/63.jpg" style="padding-top: 5px;" style="width: 100%;">
+    
+
+  </div>
+
+<!-- 2nd col -->
+<div class="col">
+
+  <form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address :</label>
+    <input type="email" class="form-control" placeholder="Enter your email" id="email">
+  </div>
+
+  <!-- Name -->
+  <div class="form-group">
+    <label for="email">Name :</label>
+    <input type="email" class="form-control" placeholder="Enter your name" id="email">
+  </div>
+
+  <!-- Message -->
+  <div class="form-group">
+    <label for="email">Message :</label>
+    <input type="email" class="form-control" placeholder="Type your message" id="email" style="height: 120px">
+  </div>
+  
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-info" style="width: 200px;">Submit</button>
+</form>
+  
+
+
+</div>
+
+</div>
+
+
+
+  
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+  <!-- My footer code starts here -->
+
+<div class="footer">
+      <br>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">749.332.5001</h5>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">Join our list</h5>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">Subscribe to our mailing list to receive updates and promotional offers</h5>
+<br>
+
+<div class="container">
+  <form class="form-inline" action="/action_page.php">
+    <label for="email2" class="mb-2 mr-sm-2" style="padding-left: 230px;">Email:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2"; style="width: 500px;" id="email2" placeholder="Enter your email" name="email">   
+    <button type="submit" class="btn btn-warning mb-2">Subscribe</button>
+  </form>
+</div>
+
+<br>
+<h5 style="text-align: center; padding-top: 20px;">Follow us on social media</h5>
+
+    <!-- Social media buttons -->
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <br>
+    <br>
+    <h1 style="padding-bottom: 20px; font-size: 16px; text-align: center; color: ghostwhite;"> Spa Maluaka Copyright 2021. All rights reserved.  </h1>
+    <br>
+
+  </div>
+
+
+
+</section>
+</body>
+</html>

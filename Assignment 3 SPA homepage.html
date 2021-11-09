@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Spa Maluaka </title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- my google font external links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- cdm for social media buttons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+h1
+{ font-size: 270%;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+}
+
+p
+{ font-size: 220%;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+}
+
+.bgFloralWhite {
+     background:FloralWhite;
+ }
+
+ .navbar a {
+  color: #000000;
+ }
+
+ * {
+  box-sizing: border-box;
+}
+
+
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 50%; 
+  min-height: 20%;
+  padding-bottom: 160px;
+  width: 100%;
+  height: 30%;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 300px;
+  
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(78, 122, 135);
+  
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(78, 122, 135);
+  color: snow;
+  text-align: center;
+}
+
+
+.fa {
+  padding: 14px;
+  font-size: 22px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+  border-radius: 50%;
+
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: azure;
+    color: indigo;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+<!-- STARTING CONTENT -->
+
+
+<body>
+
+  <!-- NAV BAR code starts here -->
+
+
+  <nav class="navbar navbar-expand-sm bgFloralWhite navbarBlack sticky-top">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Assignment 3 SPA homepage.html">
+    <img src="Code images/47.png" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="Services.html" style="font-size: 100%; padding-right: 20px">SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="" style="font-size: 100%; padding-right: 20px;">GIFT CARDS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About Spa.html" style="font-size: 100%; padding-right: 20px;">ABOUT US</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact SPA.html" style="font-size: 100%; padding-right: 80px;" >CONTACT</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- NAV BAR code ends here -->
+
+
+<section>
+  <div class="myVideo">
+<video autoplay muted loop id="myVideo" style="padding-bottom: 10px;">
+  <source src="Code images/Face.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+<div class="content">
+  <h1 style="color: ghostwhite; font-size: 360%; padding-bottom: 10px; text-align: center;">Island-Inspired Wellness</h1>
+  <p style="text-align: center; color: ghostwhite; font-size: 140%;">Spa maluaka's caring associates are ready to exceed your expectations and provide a unique and tranquil spa experience. We look forward to welcoming you.</p>
+  
+  <button id="myBtn" onclick="myFunction()" class="myBtn" style="margin-left: 247px;">BOOK NOW</button>
+  <button id="myBtn" onclick="myFunction()" class="myBtn" style="margin-left: 20px;">EXPLORE</button>
+  
+</div>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<br>
+<br>
+<br>
+
+<a href="Services.html">
+  <img src="Code images/48.png" alt="Spa" style="width:90%;">
+</a>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+
+      <!-- Row 1 -->
+
+
+
+      <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col">
+          <h5 style="padding-right: 40px; font-size: 220%;"> EVENTS AND SPECIAL OFFERS </h5>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col">
+            <h1 style="color: Black; font-size: 200%; padding-left: 60px; "> WELLNESS AND PREMIER MEMBERSHIPS </h1>
+            <p style="color: black; font-size: 18px; padding-bottom: 10px; padding-left: 60px;"> Harnessing the essence of Hawaii, Spa Maluaka has created a complete fitness and wellness program that helps individuals achieve their beauty and wellness goals. Membership offers an exceptional palette of fitness offerings, spa therapies, beauty treatments and wellness opportunities – all inspired by the stunning natural tropical surroundings. Whether seeking a relaxing escape or a complete transformation, Spa Maluaka’s exclusive Wellness & Premier Membership Program will provide assets and training for an improved lifestyle. </p>
+            <button type="button" class="btn btn-info btn-lg" style="width: 170px; margin-left: 214px;">Read more</button>
+            <br>
+           
+          </div>
+
+      </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- My footer code starts here -->
+
+<div class="footer">
+      <br>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">749.332.5001</h5>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">Join our list</h5>
+  <h5 style="font-size: 150%; padding-bottom: 15px;">Subscribe to our mailing list to receive updates and promotional offers</h5>
+<br>
+
+<div class="container">
+  <form class="form-inline" action="/action_page.php">
+    <label for="email2" class="mb-2 mr-sm-2" style="padding-left: 230px;">Email:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2"; style="width: 500px;" id="email2" placeholder="Enter your email" name="email">   
+    <button type="submit" class="btn btn-warning mb-2">Subscribe</button>
+  </form>
+</div>
+
+<br>
+<h5 style="text-align: center; padding-top: 20px;">Follow us on social media</h5>
+    <!-- Social media buttons -->
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-youtube"></a>
+
+    <br>
+    <br>
+
+      <h1 style="padding-bottom: 20px; font-size: 16px; text-align: center; color: ghostwhite;"> Spa Maluaka Copyright 2021. All rights reserved.  </h1>
+      
+
+        <br>
+        
+       
+
+  </div>
+
+
+</section>
+</body>
+</html>
